@@ -1,0 +1,58 @@
+@import mixins
+footer
+    padding: 0 20px
+    p.logoImg
+        color: #37374a
+    .nav >ul a
+        color: #37374a
+        &:hover
+            color: #756edc
+    .cta
+        background-color: #6e45e2
+        border: 1px solid #6e45e2
+        &:hover
+            transform: scale(1.1)
+.flex-between
+    display: flex
+    justify-content: space-between
+.copy
+    position: relative
+    padding-top: 80px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column-reverse
+    +media(600)
+        flex-direction: inherit
+    .hr
+        border-top: 1px solid gray
+.copy p
+    font-size: 14px
+    line-height: 19px
+    color: #6a6a77
+    font-weight: 500
+    font-family: "Maven Pro"
+    text-align: center
+.hr:before
+    position: absolute
+    content: ""
+    width: 100%
+    height: 1px
+    background-color: #bdbdc2
+    top: 43px
+.socials 
+    a
+        text-decoration: none
+        list-style: none
+        filter: grayscale(2)
+        &:hover
+            filter: drop-shadow(2px 4px 6px black)
+.sprite 
+    display: none
+footer 
+    .flex
+        padding: 64px 0 0 0 
+footer
+    svg
+        width: 20px
+        height: 16px
